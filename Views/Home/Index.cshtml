@@ -4,10 +4,11 @@
 @model IEnumerable<BirthdayCalculator.Models.BirthDateModel>
 <div class="text-center">
     <h1 class="display-4">Welkom!</h1>
-    <a asp-action="BirthdayForm">Bereken je verjaardag!</a>
+    <a class="btn btn-primary" asp-action="BirthdayForm">Bereken je verjaardag!</a>
     <table class="table table-bordered">
         <thead>
             <tr>
+                <th>Id</th></>
                 <th>Name</th>
                 <th>Birthday</th>
             </tr>
@@ -16,6 +17,7 @@
             @foreach (BirthDateModel birthday in Model)
             {
                 <tr>
+                    <td><a asp-action="GetBirthday" asp-route-id="@birthday.Id">@birthday.Id</a></td>
                     <td>@birthday.Name</td>
                     <td>@birthday.BirthDate</td>
                 </tr>

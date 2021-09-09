@@ -4,4 +4,8 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Views\Home\BirthdayForm.cshtml~RF1d4be2b.TMP" />
+  </ItemGroup>
+
 </Project>

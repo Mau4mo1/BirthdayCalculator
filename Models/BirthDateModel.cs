@@ -8,6 +8,8 @@ namespace BirthdayCalculator.Models
 {
     public class BirthDateModel
     {
+        public int Id { get; set; }
+
         [Required(ErrorMessage ="Vul dit in!")]
         public string Name { get; set; }
         [Required(ErrorMessage ="Vul dit in!")]

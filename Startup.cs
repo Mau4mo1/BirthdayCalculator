@@ -17,6 +17,7 @@ namespace BirthdayCalculator
         public Startup(IConfiguration configuration)
         {
             BirthDateModel birthDateModel = new Models.BirthDateModel();
+            birthDateModel.Id = 1;
             birthDateModel.BirthDate = DateTime.UtcNow;
             birthDateModel.Name = "Erikson";
 
