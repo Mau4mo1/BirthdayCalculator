@@ -1,3 +1,4 @@
+using BirthdayCalculator.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -15,6 +16,11 @@ namespace BirthdayCalculator
     {
         public Startup(IConfiguration configuration)
         {
+            BirthDateModel birthDateModel = new Models.BirthDateModel();
+            birthDateModel.BirthDate = DateTime.UtcNow;
+            birthDateModel.Name = "Erikson";
+
+            BirthDateRepository.AddBirthDate(birthDateModel);
             Configuration = configuration;
         }
 

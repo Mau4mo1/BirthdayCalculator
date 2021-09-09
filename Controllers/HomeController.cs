@@ -20,7 +20,7 @@ namespace BirthdayCalculator.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return View(BirthDateRepository.BirthDates);
         }
 
         public IActionResult Privacy()

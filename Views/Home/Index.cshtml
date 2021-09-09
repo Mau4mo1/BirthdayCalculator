@@ -1,8 +1,25 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-
+@model IEnumerable<BirthdayCalculator.Models.BirthDateModel>
 <div class="text-center">
     <h1 class="display-4">Welkom!</h1>
     <a asp-action="BirthdayForm">Bereken je verjaardag!</a>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Birthday</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (BirthDateModel birthday in Model)
+            {
+                <tr>
+                    <td>@birthday.Name</td>
+                    <td>@birthday.BirthDate</td>
+                </tr>
+            }
+        </tbody>
+    </table>
 </div>

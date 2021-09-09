@@ -7,14 +7,14 @@
 
     <form asp-action="BirthdayForm" method="post">
         <div asp-validation-summary="All"></div>
-        <div>
+        <div class="form-group">
             <label asp-for="Name">Jouw naam:</label>
-            <input asp-for="Name" />
+            <input class="form-control"  asp-for="Name" />
         </div>
-        <div>
+        <div class="form-group">
             <label asp-for="BirthDate">Jouw Verjaardag:</label>
-            <input asp-for="BirthDate" />
+            <input class="form-control" asp-for="BirthDate" />
         </div>
-        <button type="submit">Submit RSVP</button>
+        <button class="btn btn-primary" type="submit">Submit RSVP</button>
     </form>
 </div>
