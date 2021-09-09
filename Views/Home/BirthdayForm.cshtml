@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model BirthdayCalculator.Models.BirthDateModel
+<div class="text-center">
+    <h1>Bereken</h1>
+
+    <form asp-action="BirthdayForm" method="post">
+        <div asp-validation-summary="All"></div>
+        <div>
+            <label asp-for="Name">Jouw naam:</label>
+            <input asp-for="Name" />
+        </div>
+        <div>
+            <label asp-for="BirthDate">Jouw Verjaardag:</label>
+            <input asp-for="BirthDate" />
+        </div>
+        <button type="submit">Submit RSVP</button>
+    </form>
+</div>
