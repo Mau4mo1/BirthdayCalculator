@@ -11,15 +11,7 @@ namespace BirthdayCalculator.Models
 
         public static void AddBirthDate(BirthDateModel birthDateModel)
         {
-            // Very sloppy function to determine how high the id should be, since we don't have auto incrementing id :(
             int highestId = 0;
-            //foreach (BirthDateModel birthDate in BirthDates)
-            //{
-            //    if (birthDate.Id > highestId)
-            //    {
-            //        highestId = birthDate.Id;
-            //    }
-            //}
             try
             {
                 highestId = (from BirthDateModel birthdates in BirthDates
