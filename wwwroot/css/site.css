@@ -18,6 +18,12 @@ a {
   border-color: #1861ac;
 }
 
+.btn-primary-delete {
+    color: #FFF;
+    background-color: #FF0000;
+    border-color: #FF0000;
+}
+
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
   color: #fff;
   background-color: #1b6ec2;

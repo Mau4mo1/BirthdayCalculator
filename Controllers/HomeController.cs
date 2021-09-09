@@ -12,6 +12,7 @@ namespace BirthdayCalculator.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        
 
         public HomeController(ILogger<HomeController> logger)
         {
@@ -27,6 +28,13 @@ namespace BirthdayCalculator.Controllers
         {
             return View();
         }
+
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        public IActionResult Error()
+        {
+            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
         [HttpGet]
         public IActionResult BirthdayForm()
         {
@@ -48,7 +56,7 @@ namespace BirthdayCalculator.Controllers
                 else
                 {
                     // Geef ook het verschil mee via een viewbag
-                    ViewBag.DifferenceInDays =   birthDateModel.BirthDate.Day - DateTime.UtcNow.Day;
+                    ViewBag.DifferenceInDays = birthDateModel.BirthDate.Day - DateTime.UtcNow.Day;
                     // return notbirthday als de verjaardag niet is
                     return View("NotBirthday", birthDateModel);
                 }
@@ -67,11 +75,6 @@ namespace BirthdayCalculator.Controllers
         {
             BirthDateRepository.DeleteBirthDate(id);
             return RedirectToAction("Index");
-        }
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
 }

@@ -7,7 +7,7 @@ namespace BirthdayCalculator.Models
 {
     public static class BirthDateRepository
     {
-        public static List<BirthDateModel> BirthDates = new List<BirthDateModel>();
+        public static IList<BirthDateModel> BirthDates = new List<BirthDateModel>();
 
         public static void AddBirthDate(BirthDateModel birthDateModel)
         {

@@ -22,11 +22,7 @@ D:\School\Avans\Jaar2\SSWF\SSWFHuiswerk\BirthdayCalculator\BirthdayCalculator\ob
 D:\School\Avans\Jaar2\SSWF\SSWFHuiswerk\BirthdayCalculator\BirthdayCalculator\obj\Debug\net5.0\BirthdayCalculator.TagHelpers.input.cache
 D:\School\Avans\Jaar2\SSWF\SSWFHuiswerk\BirthdayCalculator\BirthdayCalculator\obj\Debug\net5.0\BirthdayCalculator.TagHelpers.output.cache
 D:\School\Avans\Jaar2\SSWF\SSWFHuiswerk\BirthdayCalculator\BirthdayCalculator\obj\Debug\net5.0\BirthdayCalculator.RazorCoreGenerate.cache
-D:\School\Avans\Jaar2\SSWF\SSWFHuiswerk\BirthdayCalculator\BirthdayCalculator\obj\Debug\net5.0\Razor\Views\Home\Birthday.cshtml.g.cs
-D:\School\Avans\Jaar2\SSWF\SSWFHuiswerk\BirthdayCalculator\BirthdayCalculator\obj\Debug\net5.0\Razor\Views\Home\BirthdayForm.cshtml.g.cs
 D:\School\Avans\Jaar2\SSWF\SSWFHuiswerk\BirthdayCalculator\BirthdayCalculator\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
-D:\School\Avans\Jaar2\SSWF\SSWFHuiswerk\BirthdayCalculator\BirthdayCalculator\obj\Debug\net5.0\Razor\Views\Home\NotBirthday.cshtml.g.cs
-D:\School\Avans\Jaar2\SSWF\SSWFHuiswerk\BirthdayCalculator\BirthdayCalculator\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
 D:\School\Avans\Jaar2\SSWF\SSWFHuiswerk\BirthdayCalculator\BirthdayCalculator\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
 D:\School\Avans\Jaar2\SSWF\SSWFHuiswerk\BirthdayCalculator\BirthdayCalculator\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 D:\School\Avans\Jaar2\SSWF\SSWFHuiswerk\BirthdayCalculator\BirthdayCalculator\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -40,4 +36,8 @@ D:\School\Avans\Jaar2\SSWF\SSWFHuiswerk\BirthdayCalculator\BirthdayCalculator\ob
 D:\School\Avans\Jaar2\SSWF\SSWFHuiswerk\BirthdayCalculator\BirthdayCalculator\obj\Debug\net5.0\BirthdayCalculator.pdb
 D:\School\Avans\Jaar2\SSWF\SSWFHuiswerk\BirthdayCalculator\BirthdayCalculator\obj\Debug\net5.0\BirthdayCalculator.genruntimeconfig.cache
 D:\School\Avans\Jaar2\SSWF\SSWFHuiswerk\BirthdayCalculator\BirthdayCalculator\obj\Debug\net5.0\BirthdayCalculator.csproj.CopyComplete
+D:\School\Avans\Jaar2\SSWF\SSWFHuiswerk\BirthdayCalculator\BirthdayCalculator\obj\Debug\net5.0\Razor\Views\Home\Birthday.cshtml.g.cs
+D:\School\Avans\Jaar2\SSWF\SSWFHuiswerk\BirthdayCalculator\BirthdayCalculator\obj\Debug\net5.0\Razor\Views\Home\BirthdayForm.cshtml.g.cs
 D:\School\Avans\Jaar2\SSWF\SSWFHuiswerk\BirthdayCalculator\BirthdayCalculator\obj\Debug\net5.0\Razor\Views\Home\GetBirthday.cshtml.g.cs
+D:\School\Avans\Jaar2\SSWF\SSWFHuiswerk\BirthdayCalculator\BirthdayCalculator\obj\Debug\net5.0\Razor\Views\Home\NotBirthday.cshtml.g.cs
+D:\School\Avans\Jaar2\SSWF\SSWFHuiswerk\BirthdayCalculator\BirthdayCalculator\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
