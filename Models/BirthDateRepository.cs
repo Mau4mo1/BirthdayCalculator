@@ -20,20 +20,25 @@ namespace BirthdayCalculator.Models
                 // highest Id we could find plus increment
                 birthDateModel.Id = highestId + 1;
                 BirthDates.Add(birthDateModel);
-            } catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 BirthDates.Add(birthDateModel);
             }
-            
-            
         }
-
         public static BirthDateModel GetBirthDate(int id)
         {
             BirthDateModel birthDate = (from BirthDateModel birthDates in BirthDates
                                         where birthDates.Id == id
                                         select birthDates).First();
             return birthDate;
+        }
+        public static void DeleteBirthDate(int id)
+        {
+            BirthDateModel birthDate = (from BirthDateModel birthDates in BirthDates
+                                        where birthDates.Id == id
+                                        select birthDates).First();
+            BirthDates.Remove(birthDate);
         }
     }
 }

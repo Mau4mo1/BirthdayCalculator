@@ -63,6 +63,11 @@ namespace BirthdayCalculator.Controllers
         {
             return View(BirthDateRepository.GetBirthDate(id));
         }
+        public IActionResult DeleteBirthday(int id)
+        {
+            BirthDateRepository.DeleteBirthDate(id);
+            return RedirectToAction("Index");
+        }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
