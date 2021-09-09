@@ -13,16 +13,27 @@ namespace BirthdayCalculator.Models
         {
             // Very sloppy function to determine how high the id should be, since we don't have auto incrementing id :(
             int highestId = 0;
-            foreach(BirthDateModel birthDate in BirthDates)
+            //foreach (BirthDateModel birthDate in BirthDates)
+            //{
+            //    if (birthDate.Id > highestId)
+            //    {
+            //        highestId = birthDate.Id;
+            //    }
+            //}
+            try
             {
-                if(birthDate.Id > highestId)
-                {
-                    highestId = birthDate.Id;
-                }
+                highestId = (from BirthDateModel birthdates in BirthDates
+                             select birthdates.Id)
+                             .Max();
+                // highest Id we could find plus increment
+                birthDateModel.Id = highestId + 1;
+                BirthDates.Add(birthDateModel);
+            } catch(Exception ex)
+            {
+                BirthDates.Add(birthDateModel);
             }
-            // highest Id we could find plus increment
-            birthDateModel.Id = highestId + 1;
-            BirthDates.Add(birthDateModel);
+            
+            
         }
 
         public static BirthDateModel GetBirthDate(int id)

@@ -22,6 +22,21 @@ namespace BirthdayCalculator
             birthDateModel.Name = "Erikson";
 
             BirthDateRepository.AddBirthDate(birthDateModel);
+
+            birthDateModel = new Models.BirthDateModel();
+            birthDateModel.Id = 2;
+            birthDateModel.BirthDate = DateTime.UtcNow;
+            birthDateModel.Name = "Erikson";
+
+            BirthDateRepository.AddBirthDate(birthDateModel);
+
+            birthDateModel = new Models.BirthDateModel();
+            birthDateModel.Id = 3;
+            birthDateModel.BirthDate = DateTime.UtcNow;
+            birthDateModel.Name = "Erikson";
+
+            BirthDateRepository.AddBirthDate(birthDateModel);
+
             Configuration = configuration;
         }
 
